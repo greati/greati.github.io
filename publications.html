@@ -1,0 +1,46 @@
+---
+layout: publication-page
+title: Publications
+description: Academic publicatoins
+permalink: "/publications/"
+---
+<div class="pure-g">
+    <div class="pure-u">
+        {% for pub in site.publications reversed %}
+            <article class="pub-brief">
+                <header>
+                    <h4>
+		    <span class="specific-page-list-title"><a href="{{ pub.url | absolute_url }}">{{ pub.title }}</a></span>
+		    <span class="index-post-date">{{ pub.date | date: '%B %d, %Y' }}</span>
+                    </h4>
+		    <div class="pub-authors">{{pub.authors}}</div>
+		    <div class="pub-where">{{pub.where}}</div>
+		    <div class="buttons-bar">
+			    {% if pub.pdf %}
+			    <span class="pdf-link"><a target="_blank" href="{{pub.pdf}}">PDF</a></span>
+			    {% endif %}
+			    {% if pub.doi %}
+                            <span class="doi-link"><a target="_blank" href="http://doi.org/{{pub.doi}}">DOI</a></span>
+			    {% endif %}
+			    {% if pub.preprint %}
+                            <span class="preprint-link"><a target="_blank" href="http://{{pub.preprint}}">PREPRINT</a></span>
+			    {% endif %}
+		    </div>
+                </header>
+                <p class="excerpt">
+                    {{ pub.excerpt | remove: '<p>' | remove: '</p>' }} 
+                </p>
+            </article>
+        {% endfor %}
+    </div>
+    {% comment %}
+    <div class="pure-u-3-8 l-box">
+        <div class="sidebar-widget">
+            <h3>Tags</h3>
+            {% for tag in site.tags %}
+                <a href="#{{ tag[0] | slugify }}" class="pub-tag">{{ tag[0] }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endcomment %}
+</div>

@@ -1,0 +1,171 @@
+@font-face {
+        font-family: "Computer Modern";
+	src: url("../fonts/computer-modern-font/cmunbx.otf");
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+  background:-moz-radial-gradient(#fff, #ccc);
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+a {
+	color: #000;
+  text-decoration:none;
+}
+
+#all {
+  clear:both;
+  text-align:center;
+  width:500px;
+  min-width:450px;
+  margin: 0px auto;
+  padding-top:15px;
+	font-family:"Computer Modern", sans-serif;
+}
+
+header {
+  width:100%;
+}
+
+div#main{
+  margin-top:90px;
+	clear:both;
+}
+
+h1 {
+  font-weight:bold;
+  margin:0;
+  padding:0;
+	color:#000;
+  font-size: 2.6em;
+  line-height:1.5em;
+}
+h2 {
+  font-weight:bold;
+  font-size:1.0em;
+  line-height:1.4em;
+  border-bottom:2px solid #ccc;
+	color:#000;	
+}
+p {
+  margin:0;
+  padding:10px 0;
+  line-height:1.2em;
+  text-align:justify;
+}
+
+p#brief {
+  font-size:.85em;
+	color:#000;
+}
+
+p.occupation {
+	font-size:.8em;
+  text-align:center;
+  padding:5px 0;
+}
+
+p.nomore {
+	opacity:0.5;
+}
+
+img#profile-avatar{
+	width:80px;
+	height:100px;
+  border-radius:3px;
+  border:2px solid #000;
+}
+
+ul#links {
+	list-style:none;
+  clear:both;
+  width:100%;
+  margin:0;
+  padding:0;
+  margin:18px auto;
+}
+
+ul#links li {
+	float:left;
+  width:16.66%;
+  color:#999;
+  font-size:.9em;
+}
+
+ul#links li span, ul#links li i {
+  transition:.5s;
+  color:#333;
+  padding-bottom:4px;
+}
+
+ul#links li:hover span, ul#links li:hover i {
+	color: #000;
+  transition:.5s;
+  margin-top:-5px;
+}
+ 
+ul#links li i {
+	font-size:35px;
+  padding-bottom:0;
+  margin-bottom:1px;
+  padding-bottom:0px;			
+}
+
+ul#links li:hover i {
+}
+
+ul.icon-horizontal-list {
+  width:100%;
+	height:50px;
+  margin:0 auto;
+  padding:0 5px;
+}
+
+ul.icon-horizontal-list li {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  width:25%;
+	float:left;
+  font-size:1.3em;
+  opacity:.5;
+  padding:2px 0;
+} 
+
+footer {
+	clear:both;
+  border-top:2px solid #ccc;
+}
+
+footer p {
+	text-align:center;
+  font-size:.8em;
+}
+
+div#preferences h3 {
+  line-height:2.4em;
+}
+
+div.preference:first-of-type {
+  border-left:1px dotted #ccc;
+}
+div.preference {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border-right:1px dotted #ccc;
+  float:left;
+	width:33.3%;
+  text-align:center;
+}
+
+div.preference h3 {
+	line-height:1.8em;
+  font-size:.9em;
+}
+ 

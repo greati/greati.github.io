@@ -1,0 +1,30 @@
+---
+layout: blog
+---
+<div class="pure-g">
+    <div class="pure-u-5-8">
+        {% for post in site.posts %}
+            <article class="post-brief">
+                <header>
+                    <h4>
+                        <a class="specific-page-list-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                    </h4>
+                    <div class="post-brief-info">
+                        <span>Written on {{ post.date | date: "%B %e, %Y" }}</span>
+                    </div>
+                </header>
+                <p class="excerpt">
+                    {{ post.excerpt | remove: '<p>' | remove: '</p>' }} 
+                </p>
+            </article>
+        {% endfor %}
+    </div>
+    <div class="pure-u-3-8 l-box">
+        <div class="sidebar-widget">
+            <h3>Tags</h3>
+            {% for tag in site.tags %}
+                <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+name: Vitor Greati's Home
+
+description: Personal website and blog of Vitor Greati.
+
+future: true
+
+markdown: kramdown
+
+repository: greati/greati.github.io
+
+collections:
+    publications:
+        output: true
+    presentations:
+        output: true
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
+    - vendor
+
+gems:
+    - jekyll-github-metadata
+    - jekyll-mentions
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jemoji

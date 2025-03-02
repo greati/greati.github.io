@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<div class="pure-g">
+
+    <div class="pure-u-1">
+        <section class="page-section" id="brief-section">
+            <div class="content">
+                <p id="brief">
+		<img src="{{ site.baseurl }}/img/mypicture.jpg" class="pure-img" id="brief-photo"/>
+		PhD candidate at <a target="blank" href="https://rug.nl">RUG</a> (Groningen, Netherlands) under the supervision of <a target="_blank" href="https://www.rug.nl/staff/d.r.s.ramanayake/research">Revantha Ramanayake</a>, focused on
+		    decidability and complexity of non-classical logics through proof theory.
+		    <a href="twodimhc-masters.html">Master in Systems and Computing</a> by <a target="blank" href="https://ufrn.br">UFRN</a> (Natal, Brazil)
+            under the supervision of <a target="_blank" href="https://sites.google.com/site/sequiturquodlibet/">João Marcos</a> and <a target="_blank" href="https://sqigmath.tecnico.ulisboa.pt/sergio.marcelino">Sérgio Marcelino</a>.
+		    <a target="blank" href="hcclf-monograph">Bachelor in Computer Science</a> also by UFRN. Interested in
+                    proof theory, non-deterministic semantics, non-Tarskian notions of logics, 
+		    abstract algebraic logic and data science. 
+                    Technical formation
+		    in Informatics by <a target="blank" href="https://portal.ifrn.edu.br/campus/natalzonanorte">IFRN-ZN</a> (Natal, Brazil) and in Informatics with
+                    emphasis in web development by UFRN.
+                </p> 
+            </div>
+        </section>
+    </div>
+
+
+    <div class="pure-u-1">
+        <section class="page-section">
+            <h3>Latest publications</h3>
+            <div class="content">
+                <nav id="latest-publications" class="index-page-list">
+                    <ul>
+			{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+                        {% for pub in sorted_publications limit:4 %}
+			<li><a href="{{ pub.url }}"><span class="index-page-list-title">{{ pub.title }}</span></a>
+			    <span class="index-post-date">{{ pub.date | date: '%B %d, %Y' }}</span>
+                            <div class="pub-authors">{{pub.authors}}</div>
+                            <div class="pub-where">{{pub.where}}</div>
+			    <div class="buttons-bar">
+				    {% if pub.pdf %}
+				    <span class="pdf-link"><a target="_blank" href="{{pub.pdf}}">PDF</a></span>
+				    {% endif %}
+				    {% if pub.doi %}
+				    <span class="doi-link"><a target="_blank" href="http://doi.org/{{pub.doi}}">DOI</a></span>
+				    {% endif %}
+				    {% if pub.preprint %}
+				    <span class="preprint-link"><a target="_blank" href="http://{{pub.preprint}}">PREPRINT</a></span>
+				    {% endif %}
+                    {% if pub.errata %}
+				    <span class="errata-link"><a href="{{pub.url}}#errata">ERRATA</a></span>
+                    {% endif %}
+		            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="more-link">
+                <a href="/publications" class="more-button">More ({{site.publications.size}})</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="pure-u-1">
+        <section class="page-section">
+            <h3>Latest presentations</h3>
+            <div class="content">
+                <nav id="latest-presentations" class="index-page-list">
+                    <ul>
+			{% assign sorted_presentations = site.presentations | sort: 'date' | reverse %}
+                        {% for pres in sorted_presentations limit:4 %}
+			<li><a href="{{ pres.url }}"><span class="index-page-list-title">{{ pres.title }}</span>
+                            <span class="index-post-date">{{ pres.date | date: '%B %d, %Y' }}</span></a>
+
+                            <div class="pub-where">{{pres.where}}</div>
+			    <div class="buttons-bar">
+				    {% if pres.pdf %}
+				    <span class="pdf-link"><a target="_blank" href="{{pres.pdf}}">PDF</a></span>
+				    {% endif %}
+				    {% if pres.video %}
+				    <span class="video-link"><a target="_blank" href="{{pres.video}}">WATCH</a></span>
+				    {% endif %}
+			    </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="more-link">
+                <a href="/presentations" class="more-button">More ({{site.presentations.size}})</a>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="pure-u-1">
+        <section class="page-section">
+            <h3>Latest blog posts</h3>
+            <div class="content">
+                <nav id="latest-posts" class="index-page-list">
+                    <ul>
+                        {% for post in site.posts limit:5 %}
+			<li><a href="{{ post.url }}"><span class="index-page-list-title">{{ post.title }}</span>
+					<span class="index-post-date">{{ post.date | date: '%B %d, %Y' }}</span></a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="more-link">
+                <a href="/blog" class="more-button">More ({{site.posts.size}})</a>
+            </div>
+        </section>
+    </div>
+
+    <!--<div class="pure-u-1">
+        <section class="page-section">
+            <h3>Portfolio recents</h3>
+            <div class="content">
+                <nav id="latest-portfolio" class="index-page-list">
+                    <ul>
+                        {% for project in site.portfolio limit:5 %}
+                        <li>
+                            <a class="project-title" href="{{ project.url }}">{{ project.title }}</a>
+                            <p class="project-headline">
+                                 {{ project.headline }}
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+	    </div>
+            <div class="more-link">
+                <a href="/portfolio" class="more-button">More ({{site.portfolio.size}})</a>
+            </div>
+        </section>
+    </div>-->
+</div>
+
+
+

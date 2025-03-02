@@ -1,0 +1,26 @@
+---
+layout: presentation-page
+---
+
+<div class="pure-g">
+	<div class="pure-u-1">
+		<article class="post">
+			<header>
+				<h3>{{ page.title }}</h3>
+                            <div class="pub-where">{{page.where}}</div>
+			    <div class="buttons-bar">
+				    {% if page.pdf %}
+				    <span class="pdf-link"><a target="_blank" href="{{page.pdf}}">PDF</a></span>
+				    {% endif %}
+				    {% if page.video%}
+				    <span class="video-link"><a href="{{pres.video}}">WATCH</a></span>
+				    {% endif %}
+		            </div>
+			</header>
+
+			<div class="entry">
+				{{ content }}
+			</div>
+		</article>
+	</div>
+</div>

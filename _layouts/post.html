@@ -1,0 +1,27 @@
+---
+layout: blog
+---
+
+<div class="pure-g">
+	<div class="pure-u-1">
+		<article class="post">
+			<header>
+				<h3>{{ page.title }}</h3>
+				<div class="date post-info">
+					Written on {{ page.date | date: "%B %e, %Y" }}
+				</div>
+			</header>
+
+			<div class="entry">
+				{{ content }}
+			</div>
+		</article>
+	</div>
+
+	<div class="pure-u-1">
+		<section class="sidebar-widget">
+		<h3>Related posts</h3>
+		<p>No related posts.</p>
+		</section>
+	</div>
+</div>
