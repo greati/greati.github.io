@@ -6,6 +6,7 @@ date: 2024-05-26
 authors: V. Greati, R. Ramanayake
 tags: [substructural logics, lossy channel systems, complexity, sequent calculus, well-quasi-orders]
 preprint: "www.arxiv.org/abs/2406.15626"
+doi: "https://dblp.org/db/conf/aiml/aiml2024.html"
 ---
 
 We prove that the problem of deciding the consequence relation of the full Lambek calculus with 
