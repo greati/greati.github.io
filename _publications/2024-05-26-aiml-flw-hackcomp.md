@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Deducibility in the full Lambek calculus with weakening is HAck-complete"
-where: Proceeding of AiML
+where: Proceedings of AiML24
 date: 2024-05-26
 authors: V. Greati, R. Ramanayake
 tags: [substructural logics, lossy channel systems, complexity, sequent calculus, well-quasi-orders]
