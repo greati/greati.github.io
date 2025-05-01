@@ -5,7 +5,7 @@ where: Submitted.
 date: 2025-05-01
 authors: N. Galatos, V. Greati, R. Ramanayake, Gavin St. John
 tags: [substructural logics, counter machines, residuated lattices, complexity, sequent calculus, hypersequent calculus, well-quasi-orders]
-preprint: "https://arxiv.org/abs/2504.21674"
+preprint: "www.arxiv.org/abs/2504.21674"
 ---
 
 Substructural logics are formal logical systems that omit familiar structural rules of classical and intuitionistic logic such as contraction, weakening, exchange (commutativity), and associativity. This leads to a resource-sensitive logical framework that has proven influential beyond mathematical logic and its algebraic semantics, across theoretical computer science, linguistics, and philosophical logic. The set of theorems of a substructural logic is recursively enumerable and, in many cases, recursive. These logics also possess an intricate mathematical structure that has been the subject of research for over six decades.
