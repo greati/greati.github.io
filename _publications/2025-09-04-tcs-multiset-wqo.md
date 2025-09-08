@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Tight length theorems for multiset extensions of Higman's lemma"
-where: Theoretical Computer Science (accepted)
+where: Theoretical Computer Science
 date: 2025-09-04
 authors: V. Greati and R. Ramanayake
 tags: [well-quasi-orders, length theorems, Higman's Lemma, multiset embedding, substructural logics]
