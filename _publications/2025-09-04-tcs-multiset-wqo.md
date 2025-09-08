@@ -5,6 +5,7 @@ where: Theoretical Computer Science (accepted)
 date: 2025-09-04
 authors: V. Greati and R. Ramanayake
 tags: [well-quasi-orders, length theorems, Higman's Lemma, multiset embedding, substructural logics]
+doi: 10.1016/j.tcs.2025.115546
 ---
 
 A well-quasi-ordered (wqo) set generalizes the notion of well-foundedness and is a powerful 
